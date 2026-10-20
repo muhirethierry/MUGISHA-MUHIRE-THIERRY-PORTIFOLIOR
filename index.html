@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MUGISHA MUHIRE THIERRY | Software Developer</title>
+<meta name="description" content="Portfolio of Thierry Mugisha, a software developer in Kigali, Rwanda building fast, accessible products.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Thierry Mugisha, home"><span class="mark">TM</span><span class="who"><b>Thierry Mugisha</b><small>Software Developer</small></span></a>
+    <nav aria-label="Main">
+      <a href="#top" class="hide-sm">Home</a>
+      <a href="#about" class="hide-sm">About</a>
+      <a href="#skills" class="hide-sm">Skills</a>
+      <a href="#work" class="hide-sm">Projects</a>
+      <a href="#contact">Contact</a>
+      <a class="cv" href="assets/docs/Thierry-Mugisha-CV.pdf" download aria-label="Download CV"><span class="txt">Download CV</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg></a>
+      <button id="theme" type="button" aria-label="Switch light or dark theme">◐</button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div class="hero-text">
+    <h1>I build fast, clear web products.</h1>
+    <p class="lead">I'm a full-stack developer who turns messy ideas into reliable, accessible apps. Open to freelance projects and full-time roles.</p>
+    <div class="btns">
+      <a class="btn primary" href="#work">See my projects</a>
+      <a class="btn ghost" href="#contact">Hire me</a>
+    </div>
+    <div class="picker" role="group" aria-label="Choose an accent colour">
+      <span>Try a colour:</span>
+      <button type="button" style="background:#3A56F5" data-c="#3A56F5" aria-label="Blue" aria-pressed="true"></button>
+      <button type="button" style="background:#D6246E" data-c="#D6246E" aria-label="Pink" aria-pressed="false"></button>
+      <button type="button" style="background:#0E8F7E" data-c="#0E8F7E" aria-label="Teal" aria-pressed="false"></button>
+      <button type="button" style="background:#D9480F" data-c="#D9480F" aria-label="Orange" aria-pressed="false"></button>
+    </div>
+    </div>
+    <figure class="photo avatar"><img src="assets/images/profile.jpg" alt="Photo of Thierry Mugisha"><span class="ph"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>Your photo<small>assets/images/profile.jpg</small></span></figure>
+  </div>
+
+  <section id="work">
+    <div class="wrap">
+      <h2>Selected work</h2>
+      <ul class="work">
+        <li>
+          <figure class="photo shot"><img src="assets/images/project-1.jpg" alt="Screenshot of Online Store"><span class="ph"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M21 16l-5-5-8 8"/></svg>Project image<small>assets/images/project-1.jpg</small></span></figure>
+          <div>
+            <h3>Project One: Online Store</h3>
+            <p>A mobile-first shop with cart, payments and an admin dashboard. Page loads dropped from 4s to under 1s.</p>
+          </div>
+          <ul class="stack"><li>React</li><li>Node.js</li><li>PostgreSQL</li></ul>
+          <div class="links"><a class="live" href="#" target="_blank" rel="noopener noreferrer" aria-label="Open live site of Online Store (opens in a new tab)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h5"/></svg>Live site</a><a class="code" href="#" target="_blank" rel="noopener noreferrer" aria-label="View source code of Online Store (opens in a new tab)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>Code</a></div>
+        </li>
+        <li>
+          <figure class="photo shot"><img src="assets/images/project-2.jpg" alt="Screenshot of Task Tracker"><span class="ph"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M21 16l-5-5-8 8"/></svg>Project image<small>assets/images/project-2.jpg</small></span></figure>
+          <div>
+            <h3>Project Two: Task Tracker</h3>
+            <p>A team to-do app with real-time updates, drag-and-drop boards and offline support.</p>
+          </div>
+          <ul class="stack"><li>TypeScript</li><li>Next.js</li><li>WebSockets</li></ul>
+          <div class="links"><a class="live" href="#" target="_blank" rel="noopener noreferrer" aria-label="Open live site of Task Tracker (opens in a new tab)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h5"/></svg>Live site</a><a class="code" href="#" target="_blank" rel="noopener noreferrer" aria-label="View source code of Task Tracker (opens in a new tab)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>Code</a></div>
+        </li>
+        <li>
+          <figure class="photo shot"><img src="assets/images/project-3.jpg" alt="Screenshot of Weather Dashboard"><span class="ph"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M21 16l-5-5-8 8"/></svg>Project image<small>assets/images/project-3.jpg</small></span></figure>
+          <div>
+            <h3>Project Three: Weather Dashboard</h3>
+            <p>Forecasts and charts from a public API, with clean layouts that work from phone to desktop.</p>
+          </div>
+          <ul class="stack"><li>JavaScript</li><li>REST APIs</li><li>Chart.js</li></ul>
+          <div class="links"><a class="live" href="#" target="_blank" rel="noopener noreferrer" aria-label="Open live site of Weather Dashboard (opens in a new tab)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h5"/></svg>Live site</a><a class="code" href="#" target="_blank" rel="noopener noreferrer" aria-label="View source code of Weather Dashboard (opens in a new tab)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>Code</a></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>What I work with</h2>
+      <div class="skills">
+        <div><h3>Frontend</h3><ul><li><span>TypeScript</span><span class="stars" role="img" aria-label="5 out of 5"><b>★★★★★</b></span></li><li><span>JavaScript</span><span class="stars" role="img" aria-label="5 out of 5"><b>★★★★★</b></span></li><li><span>React + Next.js</span><span class="stars" role="img" aria-label="5 out of 5"><b>★★★★★</b></span></li></ul></div>
+        <div><h3>Backend and data</h3><ul><li><span>Node.js + Express/NestJS</span><span class="stars" role="img" aria-label="5 out of 5"><b>★★★★★</b></span></li><li><span>PostgreSQL + SQL</span><span class="stars" role="img" aria-label="5 out of 5"><b>★★★★★</b></span></li><li><span>Python</span><span class="stars" role="img" aria-label="4 out of 5"><b>★★★★</b><i>★</i></span></li></ul></div>
+        <div><h3>AI</h3><ul><li><span>AI APIs / RAG / AI Agents</span><span class="stars" role="img" aria-label="5 out of 5"><b>★★★★★</b></span></li></ul></div>
+        <div><h3>Tools and
