@@ -1,92 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>MUGISHA MUHIRE THIERRY | Software Developer</title>
-<meta name="description" content="Portfolio of Thierry Mugisha, a software developer in Kigali, Rwanda building fast, accessible products.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#10111b">
+  <meta name="description" content="Thierry Mugisha is a software developer in Kigali, Rwanda, building thoughtful digital products for the web.">
+  <title>Thierry Mugisha — Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<canvas id="bg" aria-hidden="true"></canvas>
-<header>
-  <div class="wrap">
-    <a class="logo" href="#top" aria-label="Thierry Mugisha, home"><span class="mark">TM</span><span class="who"><b>Thierry Mugisha</b><small>Software Developer</small></span></a>
-    <nav aria-label="Main">
-      <a href="#top" class="hide-sm">Home</a>
-      <a href="#about" class="hide-sm">About</a>
-      <a href="#skills" class="hide-sm">Skills</a>
-      <a href="#work" class="hide-sm">Projects</a>
-      <a href="#contact">Contact</a>
-      <a class="cv" href="assets/docs/Thierry-Mugisha-CV.pdf" download aria-label="Download CV"><span class="txt">Download CV</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg></a>
-      <button id="theme" type="button" aria-label="Switch light or dark theme">◐</button>
-    </nav>
-  </div>
-</header>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <header class="site-header">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="#top" aria-label="Thierry Mugisha, home"><span class="brand-mark">T<span>.</span></span><span>Thierry Mugisha</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+        <button id="theme" class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme"><span aria-hidden="true">◐</span></button>
+      </nav>
+    </div>
+  </header>
 
-<main id="top">
-  <div class="wrap hero">
-    <div class="hero-text">
-    <h1>I build fast, clear web products.</h1>
-    <p class="lead">I'm a full-stack developer who turns messy ideas into reliable, accessible apps. Open to freelance projects and full-time roles.</p>
-    <div class="btns">
-      <a class="btn primary" href="#work">See my projects</a>
-      <a class="btn ghost" href="#contact">Hire me</a>
-    </div>
-    <div class="picker" role="group" aria-label="Choose an accent colour">
-      <span>Try a colour:</span>
-      <button type="button" style="background:#3A56F5" data-c="#3A56F5" aria-label="Blue" aria-pressed="true"></button>
-      <button type="button" style="background:#D6246E" data-c="#D6246E" aria-label="Pink" aria-pressed="false"></button>
-      <button type="button" style="background:#0E8F7E" data-c="#0E8F7E" aria-label="Teal" aria-pressed="false"></button>
-      <button type="button" style="background:#D9480F" data-c="#D9480F" aria-label="Orange" aria-pressed="false"></button>
-    </div>
-    </div>
-    <figure class="photo avatar"><img src="assets/images/profile.jpg" alt="Photo of Thierry Mugisha"><span class="ph"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>Your photo<small>assets/images/profile.jpg</small></span></figure>
-  </div>
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> SOFTWARE DEVELOPER <span class="eyebrow-line"></span> KIGALI, RWANDA</p>
+        <h1 id="hero-title">Building useful things for <span class="headline-accent">the web.</span></h1>
+        <p class="hero-lede">I'm Thierry, a software developer who enjoys turning ideas into clear, dependable digital experiences.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="mailto:muhirethierry@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-meta"><span>OPEN TO OPPORTUNITIES</span><span class="meta-rule"></span><span>PRODUCT · WEB · SOFTWARE</span></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative illustration with Thierry Mugisha's initials">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-glow"></div>
+        <div class="art-card">
+          <div class="art-card-top"><span></span><span></span><span></span><i>tm.dev</i></div>
+          <div class="art-code"><span class="code-muted">01</span><span class="code-purple">const</span> <span class="code-light">developer</span> <span class="code-pink">=</span> <span class="code-yellow">{</span></div>
+          <div class="art-code"><span class="code-muted">02</span><span class="code-light indent">name</span><span class="code-pink">:</span> <span class="code-green">"Thierry"</span><span class="code-light">,</span></div>
+          <div class="art-code"><span class="code-muted">03</span><span class="code-light indent">basedIn</span><span class="code-pink">:</span> <span class="code-green">"Kigali"</span><span class="code-light">,</span></div>
+          <div class="art-code"><span class="code-muted">04</span><span class="code-light indent">focus</span><span class="code-pink">:</span> <span class="code-green">"the web"</span></div>
+          <div class="art-code"><span class="code-muted">05</span><span class="code-yellow">}</span><span class="code-light">;</span></div>
+          <div class="art-cursor"></div>
+        </div>
+        <div class="floating-tag tag-top"><span class="tag-icon">✳</span> Ideas into interfaces</div>
+        <div class="floating-tag tag-bottom"><span class="tag-pulse"></span> Available for new opportunities</div>
+        <span class="art-index">01 / 04</span>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+    </section>
 
-  <section id="work">
-    <div class="wrap">
-      <h2>Selected work</h2>
-      <ul class="work">
-        <li>
-          <figure class="photo shot"><img src="assets/images/project-1.jpg" alt="Screenshot of Online Store"><span class="ph"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M21 16l-5-5-8 8"/></svg>Project image<small>assets/images/project-1.jpg</small></span></figure>
-          <div>
-            <h3>Project One: Online Store</h3>
-            <p>A mobile-first shop with cart, payments and an admin dashboard. Page loads dropped from 4s to under 1s.</p>
-          </div>
-          <ul class="stack"><li>React</li><li>Node.js</li><li>PostgreSQL</li></ul>
-          <div class="links"><a class="live" href="#" target="_blank" rel="noopener noreferrer" aria-label="Open live site of Online Store (opens in a new tab)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h5"/></svg>Live site</a><a class="code" href="#" target="_blank" rel="noopener noreferrer" aria-label="View source code of Online Store (opens in a new tab)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>Code</a></div>
-        </li>
-        <li>
-          <figure class="photo shot"><img src="assets/images/project-2.jpg" alt="Screenshot of Task Tracker"><span class="ph"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M21 16l-5-5-8 8"/></svg>Project image<small>assets/images/project-2.jpg</small></span></figure>
-          <div>
-            <h3>Project Two: Task Tracker</h3>
-            <p>A team to-do app with real-time updates, drag-and-drop boards and offline support.</p>
-          </div>
-          <ul class="stack"><li>TypeScript</li><li>Next.js</li><li>WebSockets</li></ul>
-          <div class="links"><a class="live" href="#" target="_blank" rel="noopener noreferrer" aria-label="Open live site of Task Tracker (opens in a new tab)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h5"/></svg>Live site</a><a class="code" href="#" target="_blank" rel="noopener noreferrer" aria-label="View source code of Task Tracker (opens in a new tab)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>Code</a></div>
-        </li>
-        <li>
-          <figure class="photo shot"><img src="assets/images/project-3.jpg" alt="Screenshot of Weather Dashboard"><span class="ph"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M21 16l-5-5-8 8"/></svg>Project image<small>assets/images/project-3.jpg</small></span></figure>
-          <div>
-            <h3>Project Three: Weather Dashboard</h3>
-            <p>Forecasts and charts from a public API, with clean layouts that work from phone to desktop.</p>
-          </div>
-          <ul class="stack"><li>JavaScript</li><li>REST APIs</li><li>Chart.js</li></ul>
-          <div class="links"><a class="live" href="#" target="_blank" rel="noopener noreferrer" aria-label="Open live site of Weather Dashboard (opens in a new tab)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h5"/></svg>Live site</a><a class="code" href="#" target="_blank" rel="noopener noreferrer" aria-label="View source code of Weather Dashboard (opens in a new tab)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>Code</a></div>
-        </li>
-      </ul>
-    </div>
-  </section>
+    <section class="section wrap about-section" id="about">
+      <div class="section-kicker"><span>01</span><span class="kicker-rule"></span> A LITTLE ABOUT ME</div>
+      <div class="about-grid">
+        <h2>Curious by nature.<br><span class="muted-heading">Developer by craft.</span></h2>
+        <div class="about-copy">
+          <p>I’m a software developer based in Kigali, Rwanda. I care about building products that feel simple to use and solid under the hood.</p>
+          <p>From shaping an idea to polishing the final details, I enjoy working across the process and learning what makes each project useful to the people it serves.</p>
+          <a class="underlined-link" href="mailto:muhirethierry@gmail.com">Have a project in mind? <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
 
-  <section id="skills">
-    <div class="wrap">
-      <h2>What I work with</h2>
-      <div class="skills">
-        <div><h3>Frontend</h3><ul><li><span>TypeScript</span><span class="stars" role="img" aria-label="5 out of 5"><b>★★★★★</b></span></li><li><span>JavaScript</span><span class="stars" role="img" aria-label="5 out of 5"><b>★★★★★</b></span></li><li><span>React + Next.js</span><span class="stars" role="img" aria-label="5 out of 5"><b>★★★★★</b></span></li></ul></div>
-        <div><h3>Backend and data</h3><ul><li><span>Node.js + Express/NestJS</span><span class="stars" role="img" aria-label="5 out of 5"><b>★★★★★</b></span></li><li><span>PostgreSQL + SQL</span><span class="stars" role="img" aria-label="5 out of 5"><b>★★★★★</b></span></li><li><span>Python</span><span class="stars" role="img" aria-label="4 out of 5"><b>★★★★</b><i>★</i></span></li></ul></div>
-        <div><h3>AI</h3><ul><li><span>AI APIs / RAG / AI Agents</span><span class="stars" role="img" aria-label="5 out of 5"><b>★★★★★</b></span></li></ul></div>
-        <div><h3>Tools and
+    <section class="section wrap work-section" id="work">
+      <div class="section-kicker"><span>02</span><span class="kicker-rule"></span> SELECTED WORK</div>
+      <div class="section-heading-row"><h2>A few things <span class="muted-heading">I’ve built.</span></h2><p>A selection of web projects and experiments.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-store">
+          <div class="project-visual store-visual" aria-hidden="true"><div class="browser-bar"><span></span><span></span><span></span><i>market / home</i></div><div class="store-ui"><div class="store-nav"><b>goodgoods</b><span>SHOP&nbsp;&nbsp; ABOUT&nbsp;&nbsp; BAG (0)</span></div><div class="store-copy"><small>THE EVERYDAY EDITION</small><b>Made for<br>the moments.</b><span class="visual-button">Explore collection&nbsp; →</span></div><div class="store-bag"><div class="bag-handle"></div><div class="bag-shape"></div></div></div><span class="visual-number">01</span></div>
+          <div class="project-info"><div class="project-overline"><span>ECOMMERCE</span><span>01 / 03</span></div><h3>Online store</h3><p>A storefront concept focused on a smooth shopping experience across screen sizes.</p><ul class="tag-list"><li>React</li><li>Node.js</li><li>PostgreSQL</li></ul></div>
+        </article>
+        <article class="project-card project-tasks">
+          <div class="project-visual tasks-visual" aria-hidden="true"><div class="browser-bar"><span></span><span></span><span></span><i>board / sprint</i></div><div class="task-ui"><div class="task-top"><b>Project board</b><span>•••</span></div><div class="task-columns"><div class="task-column"><small>TO DO <i>2</i></small><div class="task-item"><b>Plan the next release</b><span>DESIGN&nbsp; · &nbsp;2d</span><div class="mini-avatars"><i></i><i></i></div></div><div class="task-item short"><b>Review feedback</b><span>RESEARCH</span></div></div><div class="task-column"><small>IN PROGRESS <i>1</i></small><div class="task-item active"><b>Build dashboard</b><span>DEVELOPMENT&nbsp; · &nbsp;1d</span><div class="task-progress"><i></i></div></div></div></div></div><span class="visual-number">02</span></div>
+          <div class="project-info"><div class="project-overline"><span>PRODUCTIVITY</span><span>02 / 03</span></div><h3>Task tracker</h3><p>A collaborative task board concept for keeping small teams and projects in sync.</p><ul class="tag-list"><li>TypeScript</li><li>Next.js</li><li>WebSockets</li></ul></div>
+        </article>
+        <article class="project-card project-weather">
+          <div class="project-visual weather-visual" aria-hidden="true"><div class="browser-bar"><span></span><span></span><span></span><i>forecast / kigali</i></div><div class="weather-ui"><div class="weather-place"><small>WEATHER TODAY</small><b>Kigali, Rwanda</b></div><div class="weather-main"><div><strong>24°</strong><span>Partly cloudy</span></div><div class="sun-cloud"><i></i><b></b></div></div><div class="weather-forecast"><span>MON <b>23°</b></span><span>TUE <b>25°</b></span><span>WED <b>22°</b></span><span>THU <b>26°</b></span></div></div><span class="visual-number">03</span></div>
+          <div class="project-info"><div class="project-overline"><span>DATA &amp; VISUALIZATION</span><span>03 / 03</span></div><h3>Weather dashboard</h3><p>A responsive forecast concept presenting useful weather information at a glance.</p><ul class="tag-list"><li>JavaScript</li><li>REST APIs</li><li>Chart.js</li></ul></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap skills-section" id="skills">
+      <div class="section-kicker"><span>03</span><span class="kicker-rule"></span> MY TOOLKIT</div>
+      <div class="section-heading-row"><h2>Tools for turning<br><span class="muted-heading">ideas into reality.</span></h2><p>The technologies I work with across the stack.</p></div>
+      <div class="skills-grid">
+        <div class="skill-group"><span class="skill-number">01</span><div><h3>Frontend</h3><p>TypeScript · JavaScript · React · Next.js</p></div><span class="skill-arrow" aria-hidden="true">↗</span></div>
+        <div class="skill-group"><span class="skill-number">02</span><div><h3>Backend &amp; data</h3><p>Node.js · Express · NestJS · PostgreSQL · Python</p></div><span class="skill-arrow" aria-hidden="true">↗</span></div>
+        <div class="skill-group"><span class="skill-number">03</span><div><h3>AI &amp; emerging tech</h3><p>AI APIs · RAG · AI agents</p></div><span class="skill-arrow" aria-hidden="true">↗</span></div>
+        <div class="skill-group"><span class="skill-number">04</span><div><h3>Tools &amp; workflow</h3><p>Git · REST APIs · Responsive design · Accessibility</p></div><span class="skill-arrow" aria-hidden="true">↗</span></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="wrap contact-content">
+        <div class="section-kicker"><span>04</span><span class="kicker-rule"></span> NEXT UP</div>
+        <p class="contact-overline">HAVE A GOOD ONE IN MIND?</p>
+        <h2>Let’s make<br><span>it happen.</span></h2>
+        <div class="contact-bottom"><p>I’m open to opportunities, collaborations, and interesting conversations.</p><a class="contact-button" href="mailto:muhirethierry@gmail.com">Start a conversation <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="#top"><span class="brand-mark">T<span>.</span></span><span>Thierry Mugisha</span></a><p>Designed &amp; built with care <span aria-hidden="true">✳</span></p><span>© <span id="yr"></span> THIERRY MUGISHA</span></div></footer>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/background.js" defer></script>
+</body>
+</html>
