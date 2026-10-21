@@ -33,4 +33,19 @@
       updateThemeButton();
     });
   }
+
+  var ideaToggle = document.getElementById('idea-toggle');
+  var ideaDemo = document.getElementById('idea-demo');
+  var ideaState = document.getElementById('idea-state');
+  if (ideaToggle && ideaDemo) {
+    ideaToggle.addEventListener('click', function () {
+      var isBuilt = ideaToggle.getAttribute('aria-pressed') !== 'true';
+      ideaToggle.setAttribute('aria-pressed', String(isBuilt));
+      ideaDemo.classList.toggle('is-built', isBuilt);
+      ideaDemo.setAttribute('data-state', isBuilt ? 'built' : 'idea');
+      var label = ideaToggle.querySelector('.idea-button-label');
+      if (label) label.textContent = isBuilt ? 'Back to the sketch' : 'Turn idea into interface';
+      if (ideaState) ideaState.textContent = isBuilt ? '02 - The thought, shaped into a tool' : '01 - A thought looking for its shape';
+    });
+  }
 })();
