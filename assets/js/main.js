@@ -13,11 +13,11 @@
   }
   function updateThemeButton() {
     if (!themeButton) return;
-    var isLight = root.getAttribute('data-theme') === 'light';
-    themeButton.setAttribute('aria-label', isLight ? 'Switch to dark theme' : 'Switch to light theme');
-    themeButton.setAttribute('title', isLight ? 'Switch to dark theme' : 'Switch to light theme');
+    var isDark = root.getAttribute('data-theme') === 'dark';
+    themeButton.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+    themeButton.setAttribute('title', isDark ? 'Switch to light theme' : 'Switch to dark theme');
     var icon = themeButton.querySelector('span');
-    if (icon) icon.textContent = isLight ? '☼' : '◐';
+    if (icon) icon.textContent = isDark ? '☼' : '◐';
   }
 
   var savedTheme = readTheme();
@@ -27,8 +27,7 @@
   if (themeButton) {
     themeButton.addEventListener('click', function () {
       var current = root.getAttribute('data-theme');
-      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-      var next = current === 'light' || (!current && !prefersDark) ? 'dark' : 'light';
+      var next = current === 'dark' ? 'light' : 'dark';
       root.setAttribute('data-theme', next);
       saveTheme(next);
       updateThemeButton();
